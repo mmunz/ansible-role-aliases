@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  author: c1
+  description: update mail aliases database
+  license: BSD
+  min_ansible_version: 2.2
+  platforms:
+    - name: EL
+      versions:
+        - 6
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  categories:
+    - system

@@ -1,0 +1,9 @@
+- name: configure /etc/aliases
+  lineinfile:
+    create: yes
+    dest: /etc/aliases
+    line: "{{ item.user }}: {{ item.alias }}"
+    regexp: "^{{ item.user }}:"
+  with_items: "{{ aliases }}"
+  notify: update aliases database
+  tags: [aliases]
